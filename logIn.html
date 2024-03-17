@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="logIn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>iTrivia</title>
+</head>
+
+<body>
+    <script src = "logIn.js"></script>
+
+    <div class = "formLog" id = "formLog">
+        <div class = "open">
+            <p>Login</p>
+            <p>Please login to continue.</p>
+        </div>
+       
+        <div class = "logIn">
+
+        <form>
+            <div class = "formEmail">
+                <i class="fa-regular fa-envelope" style="color: #fcfcfc; font-size: 25px; justify-content: center; text-align: center;"></i>
+                <label class = "lblEmail">   EMAIL</label>
+                <input type = "text" id = "mail" class = "email"><br>
+            </div>
+        
+            <div class = "formPass">
+                <i class="fa-solid fa-lock" style="color: #ffffff; font-size: 25px; justify-content: center; text-align: center;"></i>
+                <label class = "lblPassword">PASSWORD</label>
+                <input type = "password" id = "passWord" class = "password"><br>
+            </div>
+        
+        </form> 
+            <button class = "btnLog" onclick = "loadWelcome()">LOGIN</button>
+        </div>
+   
+   <div class="forgotPass">
+        <a href = "forgot" class="forgot">Forgot Password?</a>
+   </div>
+
+    <div class = "endLineOne">
+        <p>Don't have an account? <a  href = "signUp.html" class = "signUp">Sign up </a></p>
+    </div>
+    
+</div>
+
+
+
+<div class="welcome" id = "welcome" style="display: none;">
+
+    <div class="heading">
+        <p class="welcomeiTrivia">Welcome to iTrivia</p>
+        <p class = "notif"><i class="fa-solid fa-toggle-off" style="color: #ffffff; font-size: 25px;"></i>   Allow push notification so iTrivia can tell you importantly about changes to your account.</p>
+    </div>
+
+    <div class="btnContinue">
+        <button class="btnDoIt" id = "btnDoIt" onclick="document.location = 'index.html'">Let's do it</button><br>
+        <button class = "btnNot" id = "btnNot" onclick="document.location = 'logIn.html'">Not now</button>
+    </div>
+    
+
+     
+        
+   
+    
+</body>
+
+</html>
